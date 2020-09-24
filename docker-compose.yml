@@ -1,0 +1,10 @@
+version: "3.7"
+
+# Configuração dos containers
+services: 
+
+  br-pucrs-tp:
+    build: ./docker
+    image: tp-maven-slim:latest 
+    volumes:
+      - ./:/app
